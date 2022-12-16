@@ -1,0 +1,72 @@
+
+ .tab {
+    overflow: hidden;
+    border: 1px solid rgb(30, 81, 39);
+    background-color: rgb(36, 67, 50);
+    
+  }
+
+
+  .tab button {
+  background-color: inherit;
+  float: right;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+  font-family: fantasy;
+  color:rgb(53, 194, 119);
+  }
+
+  .tab button:hover {
+  background-color: rgb(25, 51, 37);
+  }
+
+
+  .tab button.active {
+  background-color: rgb(25, 51, 37);
+  }
+
+  .tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid rgb(53, 194, 119);
+  border-top: none;
+  }
+  body{
+    background-image: url("Pictures/Clarkson.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  h1{
+    color:rgb(36, 67, 50);
+    font: bold;
+    font-family: fantasy;
+    font-size: 50px;
+  }
+  p{
+    color:rgb(21, 36, 28);
+    font: bold;
+    font-family: fantasy;
+    font-size: 25px;
+  }
+  p1{
+    color:rgb(53, 194, 119);
+    
+    font-family: fantasy;
+    font-size: 17px;
+  }
+  a{
+    color:rgb(36, 67, 50);
+    font: bold;
+    font-family: fantasy;
+    font-size: 50px;
+  }
+  li{
+    color:rgb(21, 36, 28);
+    font: bold;
+    font-family: fantasy;
+    font-size: 25px;
+  }

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Logan Site</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <link rel="stylesheet" href="stylesheet.css">
+    </head>
+
+    <body>
+
+        <div class="tab" style="position:relative;">
+           
+            <button class="tablinks" onclick="openTab(event, 'About Me')">About me</button>
+            <button class="tablinks" onclick="openTab(event, 'Interest')">Interest</button>
+            <button class="tablinks" onclick="openTab(event, 'Resume')">Resume</button>
+        </div>
+
+        <div id="About Me" class="tabcontent" style="position:relative; left: 40px">
+            <h1><br><br>Background</h1>
+            <ul>
+                <li>Background:</li>
+                <li>Born in Lewiston, Idaho in the year 2000. 
+                </li>
+                <li>Raised in Clarkston, WA.</li>
+                <li>Youngest of four:
+                </li>
+                    <ol>
+                        <li>1. Josh</li>
+                        <li>2. Kiah</li>
+                        <li>3. Brie
+                        </li>
+                        <li>4. Logan</li>
+
+                    </ol>
+                <li>Grew up playing all kinds of sports (football, baseball, soccer, track, wrestling).</li>
+                <li>Taught to be a leader through examples of others and leadership opportunities.
+                </li>
+                <li>Received a scholarship to play football at the College of Idaho.
+                </li>
+                <li>Served a mission in the Brazil, Curitiba, and Texas, San Antonio missions for two years.
+                </li>
+                <li>Worked as a residential program coordinator for California Renewable Energy selling and installing solar panels in Napa, California.
+                </li>
+                <li>Currently studying and preparing to enter the BYU Marriott School of Business.<br><br>
+                    <br><br><br><br><br><br><br><br>
+
+                </li>
+            </ul>
+
+        </div>
+        <div id="Interest" class="tabcontent" style="position:relative; top: 140px">
+            <img src="Pictures/Interest-1.png" style="position: relative; width: 300px; height: 300px;" alt="interest-1" class="rounded float-start">
+            <img src="Pictures/Interest-2.png" style="position: relative; width: 300px; height: 300px; left: 300px" alt="interest-2" class="rounded" >
+            <img src="Pictures/interest-3.png" style="position: relative; width: 300px; height: 300px;" alt="interest-3" class="rounded float-end">
+
+            <iframe style="position: relative; height: 300px; width: 654px; left: 50%; top: 50px;" src="https://www.youtube.com/embed/qfukT4PJxJA">
+            </iframe>
+            <a href="tab.html"><br>Tom Bradys Stats over the years.<br><br><br><br><br><br><br><br></a>
+        </div>
+        <div id="Resume" class="tabcontent" style="position:relative; left: 40px">
+
+            <h1><br><br>Table of Contents:</h1>
+            <a href="#experience" style="font-size:medium">Experience<br></a>
+            <a href="#skills"style="font-size:medium">Skills<br></a>
+            <a href="#education"style="font-size:medium">Education<br></a>
+            <a href="#achievements"style="font-size:medium">Achievements<br></a>
+
+            <a name="experience"><br>Experience:</a>   
+            <p>Law Offices of Todd S Richardson, File Clerk, 2015-2018</p>
+            <p>Auntie Annes Pretzels, Sales Associate, 2017-2018</p>
+            <p>Boxdrop Matress, Sales Associate, 2019</p>
+            <p>California Renewable Energy, Residential Program Coordinator, 2022-Present</p>
+            <p>The Cleaning Solution, Marketing Associate, 2022-Present</p>
+
+            <a name="skills">Skills:</a>   
+            <p>Leadership</p>
+            <p>Problem Solving</p>
+            <p>Communication</p>
+            <p>Working Under Pressure</p>
+            <p>Visualization</p>
+            <p>Collaberative/Teamwork</p>
+
+            <a name="education">Education:</a>     
+            <p>Asotin Junior-Senior High School, 2015-2019</p>
+            <p>College of Idaho, 2021-2022</p>
+            <p>Brigham Young University, 2022-Present</p>
+
+            <a name="achievements">Achievements:</a>   
+            <p>Student Body President, Asotion Junior-Senior High School, 2018-2019</p>
+            <p>Football Team Captain, Asotin Junior-Senior High School, 2018-2019</p>
+            <p>Missionary, Church of Jesus Christ of Latter-day Saints, 2019-2021</p>
+            <p>Team Member with Scholarship, The College of Idaho Football Team, 2021-2022</p>
+
+        </div>
+
+        <img 
+        src="Pictures/NewPortraitPic.png" 
+        class="rounded float-start" 
+        alt="profile image" 
+        style="position: relative; top: 150px; left: 200px; width: 400px; height: 400px;">
+        <div style="position:relative; right: -500px; top: 200px;">
+        
+            <h1>Logan Richardson</h1>
+            <p>Student. Creator. <br> Leader.</p>
+
+        </div>
+
+    </body>
+
+    <script>
+        function openTab(evt, tabName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(tabName).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+    </script>
+</html>
